@@ -1,0 +1,95 @@
+@import "icons/fa-icons.css";
+
+header {
+    padding: 0 10px 0 10px;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 5px -5px 10px var(--main-theme-color-blue),
+    -5px -5px 10px var(--main-theme-color-green);
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-wrapper {
+    width: 250px;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo-image {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 100%;
+
+    fill: var(--main-theme-color);
+}
+
+.logo-text {
+    font-family: 'Kanit', sans-serif;
+    color: var(--main-theme-color);
+    font-size: 45px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+
+}
+
+.input-wrapper label {
+    height: 55%;
+    display: flex;
+    align-items: center;
+
+}
+
+.search-form {
+    width: 300px;
+    min-width: 100px;
+    height: 100%;
+    border-radius: 3px 0 0 3px;
+    /*border: solid 1px #4663BE;*/
+}
+
+.search-btn {
+    height: 100%;
+    color: #4663BE;
+    border-radius: 0 5px 5px 0;
+    /*border: solid 1px #4663BE;*/
+    border: 0;
+}
+
+.search-btn::before {
+    font: var(--fa-font-solid);
+    content: "\f002";
+}
+
+.search-micro::before {
+    font: var(--fa-font-solid);
+    content: "\f3c9";
+}
+
+.notification-btn::before {
+    font: var(--fa-font-solid);
+    content: "\f0f3";
+}
+
+.profile-btn::before {
+    font: var(--fa-font-solid);
+    content: "\f1b0";
+}
+
+.control-buttons-wrapper {
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
