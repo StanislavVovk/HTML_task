@@ -2,14 +2,15 @@
 <html lang="ua" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/icons/fa-icons.css">
+    <link rel="stylesheet" href="css/fa-styles/fa-icons.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/colors.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>BulcaTV</title>
@@ -31,15 +32,33 @@
     </a>
     <div class="input-wrapper">
         <label>
-            <input class="search-form" type="text" placeholder="Пошук">
+            <input class="search-form" type="text" placeholder="Search">
             <button class="search-btn" type="submit"></button>
             <button class="search-micro"></button>
         </label>
-
     </div>
     <div class="control-buttons-wrapper">
         <button class="notification-btn"></button>
-        <button class="profile-btn"></button>
+        <div class="dropdown">
+            <button class="profile-btn"></button>
+            <div class="dropdown-content">
+                <div class="dropdown-content-element">
+                    <a href="#" class="profile">
+                        <span class="dropdown-text">Profile</span>
+                    </a>
+                </div>
+                <div class="dropdown-content-element">
+                    <a href="#" class="settings">
+                        <span class="dropdown-text">Settings</span>
+                    </a>
+                </div>
+                <div class="dropdown-content-element">
+                    <a href="#" class="log-out">
+                        <span class="dropdown-text">Log Out</span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </header>
 <main>
@@ -190,9 +209,8 @@
         </div>
     </aside>
     <div class="content">
-        <div class="nav-wrapper">
-            <!--            need grid here also add scrollable effect-->
-
+        <div class="genre-nav-wrapper">
+            <!--need grid here also add scrollable effect-->
             <button class="genre">All</button>
             <button class="genre">Food</button>
             <button class="genre">Music</button>
@@ -208,7 +226,7 @@
         <div class="slider">
         </div>
         <div class="content-items">
-<!--            need grid here-->
+            <!--            need grid here-->
             <div class="video-item">
                 <div class="video-preview">
                     <a href="">
@@ -347,7 +365,7 @@
             <span class="site-creator">
                 Inspired by Kittisaurus
             </span>
-<!--            use ::after with fA here (code of youtube image)-->
+            <!--            use ::after with fA here (code of youtube image)-->
         </footer>
     </div>
 

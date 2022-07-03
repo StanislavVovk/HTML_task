@@ -4,6 +4,7 @@
 }
 
 body {
+    background-color: var(--background-color);
     height: 1000px;
     position: relative;
     margin: 0;
