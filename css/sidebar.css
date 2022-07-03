@@ -1,0 +1,29 @@
+aside {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 100%;
+    top: 50px;
+    bottom: 150px;
+    background-color: #fff;
+}
+
+.streamers-list {
+    width: 100%;
+    height: calc(100% - 150px);
+    overflow-y: scroll;
+    padding-left: 17px;
+    display: flex;
+    flex-direction: column;
+
+}
+.streamer-form {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-table {
+    height: 150px;
+}

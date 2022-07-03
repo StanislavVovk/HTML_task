@@ -5,8 +5,13 @@
 
 body {
     background-color: var(--background-color);
-    height: 1000px;
     position: relative;
     margin: 0;
-}
 
+}
+::-webkit-scrollbar {
+    display: none;
+}
+:root {
+    --delault-margin: 50px;
+}
