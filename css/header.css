@@ -1,19 +1,12 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
 
 @import "fa-styles/fa-icons.css";
 
 header {
-    background-color: var(--header-beckground-color);
+    background-color: var(--header-background-color);
     padding: 0 10px 0 10px;
     height: 50px;
     position: sticky;
     top: 0;
-    border-radius: 0 0 10px 10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -88,7 +81,8 @@ header {
 }
 
 .search-form {
-    width: 100%;
+    width: 85%;
+    max-width: 500px;
     min-width: 100px;
     height: 100%;
     color: #212529;
@@ -143,7 +137,7 @@ header {
     background-color: #DBDBDB;
 }
 
-.search-micro {
+.search-micro, .notification-btn{
     height: 100%;
     background: none;
     color: #FFFFFF;
@@ -169,20 +163,6 @@ header {
     content: "\f3c9";
 }
 
-.notification-btn {
-    height: 100%;
-    font-size: 20px;
-    color: #FFFFFF;
-    cursor: pointer;
-    border: none;
-    background: none;
-    -webkit-transition-property: all;
-    -o-transition-property: all;
-    transition-property: all;
-    -webkit-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s
-}
 
 .notification-btn:hover {
     color: #03396c;

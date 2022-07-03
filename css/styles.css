@@ -1,17 +1,25 @@
 * {
     box-sizing: border-box;
-
 }
 
 body {
     background-color: var(--background-color);
     position: relative;
     margin: 0;
-
 }
+
+span {
+    cursor: default;
+}
+
+a {
+    text-decoration: none;
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
+
 :root {
     --delault-margin: 50px;
 }
