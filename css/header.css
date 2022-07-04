@@ -2,8 +2,9 @@
 @import "fa-styles/fa-icons.css";
 
 header {
+    z-index: 2;
     background-color: var(--header-background-color);
-    padding: 0 10px 0 10px;
+    padding: 0 20px 0 20px;
     height: 50px;
     position: sticky;
     top: 0;
@@ -163,7 +164,6 @@ header {
     content: "\f3c9";
 }
 
-
 .notification-btn:hover {
     color: #03396c;
     -webkit-animation: -fadeIn 0.5s;
@@ -291,7 +291,7 @@ header {
 .log-out::before {
     font: var(--fa-font-solid);
     content: '\f08b';
-    font-size: 12px;
+
     padding-right: 3px;
 }
 

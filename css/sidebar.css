@@ -1,13 +1,19 @@
 @import "fa-styles/fa-icons.css";
 
 aside {
-    width: 200px;
+    width: 220px;
     height: 100%;
     top: 50px;
     position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     background-color: #fff;
+    -webkit-box-shadow: 4px 1px 3px #d0d0d0;
     box-shadow: 4px 1px 3px #d0d0d0;
     margin-right: 10px;
 }
@@ -16,7 +22,12 @@ aside {
     width: 100%;
     height: calc(100% - 150px);
     overflow-y: scroll;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     border-bottom: 1px solid #d0d0d0;
 
@@ -29,9 +40,16 @@ aside {
 }
 
 .streamer-form {
-    padding: 2rem 10px 2rem 10px;
+    padding: 0 10px 0 20px;
+    height: 85px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -40,7 +58,11 @@ aside {
 }
 
 .streamer-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -54,12 +76,15 @@ aside {
 }
 
 .streamer-avatar {
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     height: 100%;
     overflow: hidden;
 }
 
 .streamer-name {
+    -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
     font-family: Poppins, sans-serif;
     font-size: 1rem;
@@ -72,13 +97,19 @@ aside {
     width: 8px;
     margin-right: 5px;
     background: rgba(255, 82, 82, 1);
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 82, 82, 1);
     box-shadow: 0 0 0 0 rgba(255, 82, 82, 1);
+    -webkit-animation: pulse-red 2s infinite;
     animation: pulse-red 2s infinite;
 }
 
 .activity {
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     font-family: Poppins, sans-serif;
     font-size: 1rem;
@@ -87,14 +118,25 @@ aside {
 
 .info-table {
     height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .info-label {
     background-color: var(--background-color);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin: 10px;
     border: 1px solid #d0d0d0;
@@ -104,6 +146,8 @@ aside {
 .info-table a {
     text-decoration: none;
     color: #212529;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -114,6 +158,11 @@ aside {
     font-weight: 500;
 }
 
+.info-text span::-moz-selection {
+    color: #FFFFFF;
+    background-color: var(--header-background-color);
+}
+
 .info-text span::selection {
     color: #FFFFFF;
     background-color: var(--header-background-color);
@@ -121,7 +170,10 @@ aside {
 
 .social {
     width: 55%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
 }
 
@@ -132,6 +184,8 @@ aside {
 
 .telegram:hover {
     color: #66B2FF;
+    -webkit-transition: color .5s;
+    -o-transition: color .5s;
     transition: color .5s;
 }
 
@@ -142,6 +196,8 @@ aside {
 
 .instagram:hover {
     color: #66B2FF;
+    -webkit-transition: color .5s;
+    -o-transition: color .5s;
     transition: color .5s;
 }
 
@@ -152,22 +208,53 @@ aside {
 
 .facebook:hover {
     color: #66B2FF;
+    -webkit-transition: color .5s;
+    -o-transition: color .5s;
     transition: color .5s;
 }
 
-@keyframes pulse-red {
+@-webkit-keyframes pulse-red {
     0% {
+        -webkit-transform: scale(0.95);
         transform: scale(0.95);
+        -webkit-box-shadow: 0 0 0 0 rgba(255, 82, 82, 0.7);
         box-shadow: 0 0 0 0 rgba(255, 82, 82, 0.7);
     }
 
     70% {
+        -webkit-transform: scale(1);
         transform: scale(1);
+        -webkit-box-shadow: 0 0 0 10px rgba(255, 82, 82, 0);
         box-shadow: 0 0 0 10px rgba(255, 82, 82, 0);
     }
 
     100% {
+        -webkit-transform: scale(0.95);
         transform: scale(0.95);
+        -webkit-box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
+        box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
+    }
+}
+
+@keyframes pulse-red {
+    0% {
+        -webkit-transform: scale(0.95);
+        transform: scale(0.95);
+        -webkit-box-shadow: 0 0 0 0 rgba(255, 82, 82, 0.7);
+        box-shadow: 0 0 0 0 rgba(255, 82, 82, 0.7);
+    }
+
+    70% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-box-shadow: 0 0 0 10px rgba(255, 82, 82, 0);
+        box-shadow: 0 0 0 10px rgba(255, 82, 82, 0);
+    }
+
+    100% {
+        -webkit-transform: scale(0.95);
+        transform: scale(0.95);
+        -webkit-box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
         box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
     }
 }
@@ -177,27 +264,42 @@ aside {
         width: 80px;
         height: 100%;
         margin-right: 0;
-
     }
 
     .streamers-list {
         border: none;
-        height: 85%;
+        height: 100%;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     }
 
     .streamer-form {
         padding: 0 10px 0 10px;
-        height: 100%;
+        height: 85px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
 
     .streamer-wrapper {
         height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+
     }
 
     .streamer-logo {

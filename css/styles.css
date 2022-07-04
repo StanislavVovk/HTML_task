@@ -1,4 +1,5 @@
 * {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -18,8 +19,4 @@ a {
 
 ::-webkit-scrollbar {
     display: none;
-}
-
-:root {
-    --delault-margin: 50px;
 }

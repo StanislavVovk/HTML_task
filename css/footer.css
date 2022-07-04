@@ -1,3 +1,45 @@
+@import "fa-styles/fa-icons.css";
+
 footer {
-    margin-left: 210px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 20px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.site-creator {
+    font-size: 25px;
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.site-creator::after {
+    padding-left: 5px;
+    font: var(--fa-font-brands);
+    content: "\f167";
+}
+
+@media (min-width: 1200px) {
+
 }
